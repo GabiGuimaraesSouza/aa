@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/buscarFragment"
+        android:icon="@drawable/buscar"
+        android:title="Buscar" />
+
+    <item
+        android:id="@+id/pedidosFragment"
+        android:icon="@drawable/pedidos"
+        android:title="Pedidos" />
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/carrinhoFragment"
+        android:icon="@drawable/carrinhos"
+        android:title="Carrinho" />
+
+    <item
+        android:id="@+id/perfilFragment"
+        android:icon="@drawable/perfil"
+        android:title="@string/text_profile" />
+
+</menu>
