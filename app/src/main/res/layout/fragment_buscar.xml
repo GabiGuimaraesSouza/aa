@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dedalosfundotodos"
     tools:context=".BuscarFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="337dp"
+        android:layout_height="49dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/bg_button_radius_12"
+        android:backgroundTint="#86EAEAEA"
+        android:elevation="1dp"
+        android:showAsAction="collapseActionView|ifRoom"
+        app:circularflow_defaultRadius="1dp"
+        app:defaultQueryHint="O QUE VOCÊ PROCURA? "
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:queryBackground="@color/transparent"
+        app:searchHintIcon="@null"
+        app:submitBackground="@null" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="170dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="BUSCAR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="351dp"
+        android:layout_height="503dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/grupo_35206"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

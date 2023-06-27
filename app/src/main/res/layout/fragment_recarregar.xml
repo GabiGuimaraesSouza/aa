@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dedalosfundotodos"
+    tools:context=".RecarregarFragment">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="318dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/grupo_35215"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/backward_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Recarregar Cartão "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="318dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/grupo_35216"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

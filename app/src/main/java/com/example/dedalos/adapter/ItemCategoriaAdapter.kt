@@ -8,12 +8,30 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dedalos.R
 
-class ItemCategoriaAdapter(private val dataList: List<ItemCategoria>) :
-    RecyclerView.Adapter<ItemCategoriaAdapter.MyViewHolder>() {
+class ItemCategoriaAdapter(
+    private val dataList: List<ItemCategoria>,
+    private val listener: OnItemClickListener
+) : RecyclerView.Adapter<ItemCategoriaAdapter.MyViewHolder>() {
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textName: TextView = itemView.findViewById(R.id.textName)
         val imagePhoto: ImageView = itemView.findViewById(R.id.image_photo)
+
+        init {
+            itemView.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    val categoria = dataList[position]
+                    when (categoria.nome) {
+                        "Entradas" -> listener.onEntradasClick()
+                        "Bebidas" -> listener.onBebidasClick()
+                        "Aperitivos" -> listener.onAperitivosClick()
+                        "Recarregar Cartão" -> listener.onRecarregarCartaoClick()
+                        // Adicione outros casos conforme necessário
+                    }
+                }
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -30,6 +48,14 @@ class ItemCategoriaAdapter(private val dataList: List<ItemCategoria>) :
 
     override fun getItemCount(): Int {
         return dataList.size
+    }
+
+    interface OnItemClickListener {
+        fun onEntradasClick()
+        fun onBebidasClick()
+        fun onAperitivosClick()
+        fun onRecarregarCartaoClick()
+        // Adicione outros métodos conforme necessário para os outros itens
     }
 
     data class ItemCategoria(val nome: String, val imagem: Int)

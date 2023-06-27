@@ -1,14 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PerfilFragment">
+    tools:context=".PerfilFragment"
+    android:background="@drawable/dedalosfundotodos">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/backward_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="165dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="MEU PERFIL"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Nome do usuário"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="144dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/grupo_768"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="54dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="115dp"
+        android:src="@drawable/grupo_35131"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="327dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/grupo_35211"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="327dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/grupo_35210"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="327dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/grupo_35209"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="327dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/grupo_35212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="327dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/grupo_35213"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="327dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/grupo_35214"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

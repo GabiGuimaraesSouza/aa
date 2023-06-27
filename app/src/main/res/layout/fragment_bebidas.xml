@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dedalosfundotodos"
+        tools:context=".BuscarFragment">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="337dp"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="38dp"
+            android:background="@drawable/bg_button_radius_12"
+            android:backgroundTint="#86EAEAEA"
+            android:elevation="1dp"
+            android:showAsAction="collapseActionView|ifRoom"
+            app:circularflow_defaultRadius="1dp"
+            app:defaultQueryHint="O QUE VOCÊ PROCURA? "
+            app:iconifiedByDefault="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:queryBackground="@color/transparent"
+            app:searchHintIcon="@null"
+            app:submitBackground="@null" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="162dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="BEBIDAS"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/backward_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="360dp"
+            android:layout_height="608dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/caipirinha"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

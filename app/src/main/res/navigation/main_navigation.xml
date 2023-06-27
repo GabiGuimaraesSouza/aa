@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.dedalos.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detalheProdutoFragment"
+            app:destination="@id/detalheProdutoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/buscarFragment"
         android:name="com.example.dedalos.BuscarFragment"
@@ -30,4 +34,89 @@
         android:name="com.example.dedalos.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/recarregarFragment"
+        android:name="com.example.dedalos.RecarregarFragment"
+        android:label="fragment_recarregar"
+        tools:layout="@layout/fragment_recarregar" />
+    <fragment
+        android:id="@+id/recarregarValorFragment"
+        android:name="com.example.dedalos.RecarregarValorFragment"
+        android:label="fragment_recarregar_valor"
+        tools:layout="@layout/fragment_recarregar_valor" />
+    <fragment
+        android:id="@+id/recarregarFinalFragment"
+        android:name="com.example.dedalos.RecarregarFinalFragment"
+        android:label="fragment_recarregar_final"
+        tools:layout="@layout/fragment_recarregar_final" />
+    <fragment
+        android:id="@+id/aperitivoSucessoFragment"
+        android:name="com.example.dedalos.AperitivoSucessoFragment"
+        android:label="fragment_aperitivo_sucesso"
+        tools:layout="@layout/fragment_aperitivo_sucesso" />
+    <fragment
+        android:id="@+id/detalheProdutoFragment"
+        android:name="com.example.dedalos.DetalheProdutoFragment"
+        android:label="fragment_detalhe_produto"
+        tools:layout="@layout/fragment_detalhe_produto" />
+    <fragment
+        android:id="@+id/detalhePedidosFragment"
+        android:name="com.example.dedalos.DetalhePedidosFragment"
+        android:label="fragment_detalhe_pedidos"
+        tools:layout="@layout/fragment_detalhe_pedidos" />
+    <fragment
+        android:id="@+id/entradasFragment"
+        android:name="com.example.dedalos.EntradasFragment"
+        android:label="fragment_entradas"
+        tools:layout="@layout/fragment_entradas" />
+    <fragment
+        android:id="@+id/entradaDetalheFragment"
+        android:name="com.example.dedalos.EntradaPedidoDetalheFragment"
+        android:label="fragment_entrada_detalhe"
+        tools:layout="@layout/fragment_entrada_pedido_detalhe" />
+    <fragment
+        android:id="@+id/entradaDetalheFragment2"
+        android:name="com.example.dedalos.EntradaDetalheFragment"
+        android:label="fragment_entrada_detalhe"
+        tools:layout="@layout/fragment_entrada_detalhe" />
+    <fragment
+        android:id="@+id/todosPedidosFragment"
+        android:name="com.example.dedalos.TodosPedidosFragment"
+        android:label="fragment_todos_pedidos"
+        tools:layout="@layout/fragment_todos_pedidos" />
+    <fragment
+        android:id="@+id/aguardandoPedidosFragment"
+        android:name="com.example.dedalos.AguardandoPedidosFragment"
+        android:label="fragment_aguardando_pedidos"
+        tools:layout="@layout/fragment_aguardando_pedidos" />
+    <fragment
+        android:id="@+id/retiradosPedidosFragment"
+        android:name="com.example.dedalos.RetiradosPedidosFragment"
+        android:label="fragment_retirados_pedidos"
+        tools:layout="@layout/fragment_retirados_pedidos" />
+    <fragment
+        android:id="@+id/canceladoPedidosFragment"
+        android:name="com.example.dedalos.CanceladoPedidosFragment"
+        android:label="fragment_cancelado_pedidos"
+        tools:layout="@layout/fragment_cancelado_pedidos" />
+    <fragment
+        android:id="@+id/bebidasFragment"
+        android:name="com.example.dedalos.BebidasFragment"
+        android:label="fragment_bebidas"
+        tools:layout="@layout/fragment_bebidas" />
+    <fragment
+        android:id="@+id/aperitivosFragment"
+        android:name="com.example.dedalos.AperitivosFragment"
+        android:label="fragment_aperitivos"
+        tools:layout="@layout/fragment_aperitivos" />
+    <fragment
+        android:id="@+id/detalheBebidasFragment"
+        android:name="com.example.dedalos.DetalheBebidasFragment"
+        android:label="fragment_detalhe_bebidas"
+        tools:layout="@layout/fragment_detalhe_bebidas" />
+    <fragment
+        android:id="@+id/detalheEntradaFragment"
+        android:name="com.example.dedalos.DetalheAperitivoFragment"
+        android:label="fragment_detalhe_entrada"
+        tools:layout="@layout/fragment_detalhe_aperitivo" />
 </navigation>
