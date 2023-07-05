@@ -13,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="36dp"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="58dp"
         android:background="@drawable/bg_button_radius_12"
         android:backgroundTint="@color/red"
         android:fontFamily="@font/roboto_bold"
@@ -21,9 +21,9 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/email_layout" />
 
     <TextView
         android:id="@+id/textView7"
@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Valor"
         android:textColor="@color/white"
@@ -66,31 +66,38 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="333dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="174dp"
-        android:layout_marginEnd="20dp"
-        android:hint="R$"
-        app:hintTextAppearance="@style/HintTextStyle"
-        android:textColorHint="#090909"
-        app:hintTextColor="@color/black"
+        android:id="@+id/email_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="313dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="50dp"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxStrokeColor="@android:color/transparent"
+        app:boxStrokeWidth="0dp"
+        app:endIconMode="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconTint="@color/red">
 
         <EditText
-            android:id="@+id/editTextValor"
+            android:id="@+id/edit_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/edittext_background"
+            android:background="@drawable/shape_edit_text"
+            android:backgroundTint="#5EF3EBEB"
+            android:digits="0123456789,."
+            android:drawableStart="@drawable/valor"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_medium"
             android:inputType="numberDecimal"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#020202"
-            tools:layout_editor_absoluteX="174dp" />
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

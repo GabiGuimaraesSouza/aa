@@ -7,20 +7,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.dedalos.databinding.FragmentCarrinhoBinding
+import com.example.dedalos.databinding.FragmentCadastroPerfilBinding
 import com.example.dedalos.databinding.FragmentPerfilBinding
 
 
-class PerfilFragment : Fragment() {
+class CadastroPerfilFragment : Fragment() {
 
-    private lateinit var binding: FragmentPerfilBinding
+    private lateinit var binding: FragmentCadastroPerfilBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentPerfilBinding.inflate(inflater, container, false)
+        binding = FragmentCadastroPerfilBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -28,15 +28,11 @@ class PerfilFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        binding.imageView4.setOnClickListener {
-
-            findNavController().navigate(R.id.homeFragment)
-        }
-
-        binding.imageView15.setOnClickListener {
-            val intent = Intent(requireContext(), LogActivity::class.java)
+        binding.btnLogin5.setOnClickListener {
+            val intent = Intent(requireContext(), InternActivity::class.java)
             startActivity(intent)
         }
+
 
     }
 

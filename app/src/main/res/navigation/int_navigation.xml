@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/int_navigation"
+    app:startDestination="@id/homeIntFragment">
+
+    <fragment
+        android:id="@+id/homeIntFragment"
+        android:name="com.example.dedalos.HomeIntFragment"
+        android:label="fragment_home_int"
+        tools:layout="@layout/fragment_home_int" />
+    <fragment
+        android:id="@+id/pedidosIntFragment"
+        android:name="com.example.dedalos.PedidosIntFragment"
+        android:label="fragment_pedidos_int"
+        tools:layout="@layout/fragment_pedidos_int" />
+    <fragment
+        android:id="@+id/qrCodeIntFragment"
+        android:name="com.example.dedalos.QrCodeIntFragment"
+        android:label="fragment_qr_code_int"
+        tools:layout="@layout/fragment_qr_code_int" />
+    <fragment
+        android:id="@+id/pedidosDetalheIntFragment"
+        android:name="com.example.dedalos.PedidosDetalheIntFragment"
+        android:label="fragment_pedidos_detalhe_int"
+        tools:layout="@layout/fragment_pedidos_detalhe_int" />
+    <fragment
+        android:id="@+id/entradasIntFragment"
+        android:name="com.example.dedalos.EntradasIntFragment"
+        android:label="fragment_entradas_int"
+        tools:layout="@layout/fragment_entradas_int" />
+</navigation>

@@ -29,7 +29,7 @@ class CarrinhoFragment : Fragment() {
 
         binding.btnLogin2.setOnClickListener {
 
-            findNavController().navigate(R.id.detalhePedidosFragment)
+            findNavController().navigate(R.id.homeFragment)
         }
 
     }

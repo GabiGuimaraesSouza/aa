@@ -10,4 +10,9 @@
         android:name="com.example.dedalos.LoginFragment"
         android:label="fragment_login_"
         tools:layout="@layout/fragment_login_" />
+    <fragment
+        android:id="@+id/cadastroPerfilFragment"
+        android:name="com.example.dedalos.CadastroPerfilFragment"
+        android:label="fragment_cadastro_perfil"
+        tools:layout="@layout/fragment_cadastro_perfil" />
 </navigation>

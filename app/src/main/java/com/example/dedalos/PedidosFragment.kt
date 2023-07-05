@@ -18,10 +18,10 @@ class PedidosFragment : Fragment() {
     ): View {
         binding = FragmentPedidosBinding.inflate(inflater, container, false)
 
-        binding.imageView26.setOnClickListener {
-            // Voltar ao fragmento anterior
-            findNavController().popBackStack()
-        }
+//        binding.imageView26.setOnClickListener {
+//            // Voltar ao fragmento anterior
+//            findNavController().popBackStack()
+//        }
 
         val adapter = PedidosAdapter(childFragmentManager, lifecycle)
         binding.viewPager2.adapter = adapter
